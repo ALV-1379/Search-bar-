@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background-color: #82beff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    max-width: 400px;
+    width: 100%;
+}
+
+.box .search-box {
+    position: relative;
+    height: 50px;
+    max-width: 50px;
+    margin: auto;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.search-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.search-box .icon {
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: #fff;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: #5f15ff;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.search-box.active {
+    max-width: 100%;
+}
+
+.search-box.active .icon {
+    background: #5f15ff;
+    color: #fff;
+    width: 60px;
+    border-radius: 0 25px 25px 0;
+}
+
+/* sujest class */
+
+.sujestion-box {
+/*     background-color: white;
+ */    /* margin-top: 5px; */
+    border-radius: 5px;
+    text-align: right;
+    width: 0px;
+    transition: all 0.3s ease;
+   /*  height: 20px; */
+    
+}
+.show{
+    width: 100%;
+}
+
+
+
+#sujest-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth;
+    scroll-h; */
+}
+
+
+ul div{
+    width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+    width:max-content;
+    a{
+        cursor: pointer;;
+        p{
+            width: max-content;
+        }
+    }
+  }
+
+#empty-input{
+
+    p{
+        float: right;
+    }
+    button{
+        float: left;
+    }
+}
